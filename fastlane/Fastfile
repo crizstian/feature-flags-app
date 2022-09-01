@@ -14,7 +14,7 @@
 # update_fastlane
 app_store_connect_api_key(
   key_id: "G6C7L49QFA",
-  issuer_id: "227b0bbf-ada8-458c-9d62-3d8022b7d07f",
+  issuer_id: "5ed6cccb-6b02-4435-a9f0-e76bbbff7012",
   key_filepath: "key.p8"
 )
 
