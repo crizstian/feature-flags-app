@@ -1,8 +1,10 @@
 app_identifier("com.cramirezdevops.CFiOSExample") # The bundle identifier of your app
-apple_id("cramirez.devops@gmail.com") # Your Apple Developer Portal username
+#apple_id("cramirez.devops@gmail.com") # Your Apple Developer Portal username
 
 itc_team_id("125447846") # App Store Connect Team ID
 team_id("M5HP5U8SQ7") # Developer Portal Team ID
 
 # For more information about the Appfile, see:
 #     https://docs.fastlane.tools/advanced/#appfile
+
+#app_store_connect_api_key()
