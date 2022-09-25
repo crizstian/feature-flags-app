@@ -13,13 +13,42 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 # Available Actions
 
-### build
+### create_app
 
 ```sh
-[bundle exec] fastlane build
+[bundle exec] fastlane create_app
 ```
 
-Create ipa
+create app
+
+----
+
+
+## iOS
+
+### ios signing
+
+```sh
+[bundle exec] fastlane ios signing
+```
+
+sign
+
+### ios build
+
+```sh
+[bundle exec] fastlane ios build
+```
+
+build
+
+### ios release
+
+```sh
+[bundle exec] fastlane ios release
+```
+
+release
 
 ----
 
