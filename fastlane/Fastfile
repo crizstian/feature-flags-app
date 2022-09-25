@@ -1,9 +1,19 @@
+fastlane_require "dotenv"
+
+before_all do
+  Dotenv.load ".env.secret"
+end
+
 desc "create app"
 lane :create_app do
   create_app_online
 end
 
 platform :ios do
+  before_all do
+    Dotenv.load ".env.ios"
+  end
+
   desc "sign"
   lane :signing do
     sync_code_signing #match
@@ -18,10 +28,17 @@ platform :ios do
   desc "build"
   lane :build do
     signing
+    build_ios_app
   end
   
   desc "release"
   lane :release do
+    ensure_git_status_clean
+    ensure_git_branch
+
     build
+    upload_to_app_store
+
+    reset_git_repo
   end
 end
