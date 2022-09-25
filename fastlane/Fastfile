@@ -34,7 +34,7 @@ platform :ios do
   desc "release"
   lane :release do
     ensure_git_status_clean
-    ensure_git_branch
+    #ensure_git_branch
 
     build
     upload_to_app_store
