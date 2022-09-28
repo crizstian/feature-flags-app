@@ -42,7 +42,7 @@ platform :ios do
     reset_git_repo
   end
   
-   desc "release artifact only"
+  desc "release artifact only"
   lane :release_artifact do
 
     upload_to_app_store
