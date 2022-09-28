@@ -46,7 +46,6 @@ platform :ios do
   lane :release_artifact do
 
     upload_to_app_store
-    reset_git_repo
 
   end
 end
