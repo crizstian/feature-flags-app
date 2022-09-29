@@ -56,7 +56,7 @@ platform :ios do
       mode: :lint,                            # SwiftLint mode: :lint (default) or :autocorrect
       output_file: "swiftlint.result.json",   # The path of the output file (optional)
       reporter: "json",                       # The custom reporter to use (optional)
-      ignore_exit_status: true,               # Allow fastlane to continue even if SwiftLint returns a non-zero exit status (Default: false)
+      ignore_exit_status: false,               # Allow fastlane to continue even if SwiftLint returns a non-zero exit status (Default: false)
       strict: true 
     )
   end
